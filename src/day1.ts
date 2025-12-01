@@ -45,7 +45,7 @@ function applyRotation(dial: number, r: string, password: number, part1 = true) 
 export async function run(part1: boolean = true) {
   console.log(`Running part ${part1 ? "1" : "2"}...`);
   try {
-    const rotations = await fs.readFile("./inputs/day1.txt", {
+    const rotations = await fs.readFile("./src/inputs/day1.txt", {
       encoding: "utf8",
     });
     let dialValue = 50;
