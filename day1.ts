@@ -40,7 +40,6 @@ function applyRotation(dial: number, r: string, password: number, part1 = true) 
   let value = dial;
   const operationSign = r[0] === 'L' ? -1 : 1;
   value = value + (operationSign * parseInt(r.slice(1)))
-  
 	
   return part1 
     ? calculateUpdatedPassword(password, value, dial)
